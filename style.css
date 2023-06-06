@@ -1,0 +1,83 @@
+body {
+    background-color: #f7f7f7;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  /* 定义页面标题的样式 */
+  header h1 {
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+    font-size: 40px;
+    color: #333;
+  }
+  
+  /* 定义导航栏的样式 */
+  nav {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+  }
+  
+  nav ul li a:hover {
+    background-color: #666;
+  }
+  
+  /* 定义文章部分的样式 */
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+  }
+  
+  section {
+    margin: 50px 0;
+  }
+  
+  section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  section p {
+    line-height: 1.5;
+  }
+  
+  section ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  
+  section li {
+    margin-bottom: 10px;
+  }
+  
+  section li a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  section li a:hover {
+    text-decoration: underline;
+  }

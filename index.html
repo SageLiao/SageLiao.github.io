@@ -6,96 +6,113 @@
     <title>Pariyan's Personal Website</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f8ff;
+            background-color: #e0f7fa;
             color: #333;
         }
         header {
-            background-color: #0073e6;
+            background: linear-gradient(to right, #0066cc, #0099cc);
             color: #fff;
-            padding: 20px;
+            padding: 40px 20px;
             text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         header h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 3em;
+            font-weight: bold;
+            text-transform: uppercase;
         }
         header p {
             margin: 0;
             font-size: 1.2em;
+            font-style: italic;
         }
         nav {
+            background-color: #004c99;
+            padding: 15px;
             text-align: center;
-            background-color: #005bb5;
-            padding: 10px 0;
         }
         nav a {
             color: #fff;
             text-decoration: none;
-            margin: 0 15px;
+            margin: 0 20px;
             font-size: 1.1em;
-            transition: color 0.3s;
+            transition: all 0.3s ease;
+            font-weight: bold;
         }
         nav a:hover {
-            color: #e6f0ff;
+            color: #ffcc00;
         }
         section {
             background-color: #ffffff;
             margin: 20px;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
         h2 {
-            color: #005bb5;
-            border-bottom: 2px solid #0073e6;
+            color: #0073e6;
+            border-bottom: 3px solid #0066cc;
             padding-bottom: 10px;
-            margin-bottom: 20px;
-            font-size: 1.8em;
+            margin-bottom: 25px;
+            font-size: 2em;
+            font-weight: bold;
         }
         p, li {
-            font-size: 1.1em;
-            margin-bottom: 10px;
+            font-size: 1.2em;
+            margin-bottom: 15px;
+            line-height: 1.8;
         }
         footer {
-            background-color: #0073e6;
+            background-color: #004c99;
             color: #fff;
             text-align: center;
-            padding: 15px;
+            padding: 20px;
             position: fixed;
             width: 100%;
             bottom: 0;
-            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
         }
         footer p {
             margin: 0;
-            font-size: 1em;
+            font-size: 1.1em;
         }
         ul {
             list-style-type: none;
             padding: 0;
         }
         li {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
         a {
-            color: #0073e6;
+            color: #0066cc;
             text-decoration: none;
-            transition: color 0.3s;
+            transition: color 0.3s ease;
         }
         a:hover {
-            color: #005bb5;
+            color: #004c99;
+        }
+        .card {
+            background-color: #f0f9ff;
+            border: 1px solid #cce7ff;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Pariyan's Personal Website</h1>
-        <p>Welcome to my personal website!</p>
+        <p>Your gateway to my world of tech and creativity</p>
     </header>
 
     <nav>
@@ -107,36 +124,44 @@
 
     <section id="personal-info">
         <h2>Personal Information</h2>
-        <p>Name: Pariyan</p>
-        <p>About Me: Here you can include a brief introduction about yourself, such as your current occupation, hobbies, and interests.</p>
+        <div class="card">
+            <p><strong>Name:</strong> Pariyan</p>
+            <p><strong>About Me:</strong> A tech enthusiast with a passion for innovation, coding, and continuous learning. Dedicated to bringing creative solutions to complex problems.</p>
+        </div>
     </section>
 
     <section id="education">
         <h2>Education</h2>
-        <ul>
-            <li><strong>XX University, XX Business School, XX Institute</strong><br>Master's Degree</li>
-            <li><strong>XX University, XX Business School, XX Department</strong><br>Bachelor's Degree</li>
-        </ul>
+        <div class="card">
+            <ul>
+                <li><strong>XX University, XX Business School, XX Department</strong><br>Bachelor's Degree</li>
+                <li><strong>XX University, XX Business School, XX Institute</strong><br>Master's Degree</li>
+            </ul>
+        </div>
     </section>
 
     <section id="projects">
         <h2>Projects</h2>
-        <ul>
-            <li><strong>Project Name:</strong> XXX Project</li>
-            <p>A brief description of this project, including the tech stack and your contributions.</p>
-            <li><strong>Project Name:</strong> YYY Project</li>
-            <p>A brief description of this project, including the tech stack and your contributions.</p>
-        </ul>
+        <div class="card">
+            <ul>
+                <li><strong>Project Name:</strong> XXX Project</li>
+                <p>A brief description of this project, including the tech stack and your contributions.</p>
+                <li><strong>Project Name:</strong> YYY Project</li>
+                <p>A brief description of this project, including the tech stack and your contributions.</p>
+            </ul>
+        </div>
     </section>
 
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:sageherty@gmail.com">sageherty@gmail.com</a></p>
-        <p>Phone: +886-903-557-020</p>
-        <ul>
-            <li><a href="https://www.facebook.com/sageliao0913" target="_blank">Facebook</a></li>
-            <li><a href="https://www.instagram.com/wenxuan0913/" target="_blank">Instagram</a></li>
-        </ul>
+        <div class="card">
+            <p><strong>Email:</strong> <a href="mailto:sageherty@gmail.com">sageherty@gmail.com</a></p>
+            <p><strong>Phone:</strong> +886-903-557-020</p>
+            <ul>
+                <li><a href="https://www.facebook.com/sageliao0913" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com/wenxuan0913/" target="_blank">Instagram</a></li>
+            </ul>
+        </div>
     </section>
 
     <footer>
